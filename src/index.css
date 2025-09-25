@@ -2,7 +2,6 @@ body {
   font-family: 'Playfair Display', serif;
   background-color: #f5f1eb;
   margin: 0;
-  padding: 2rem;
   line-height: 1.7;
   color: #2c2c2c;
   overflow-x: hidden;
@@ -11,7 +10,7 @@ body {
 a { color: #8b4513; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom .2s ease; }
 a:hover { border-bottom: 1px solid #8b4513; }
 
-.computing-container { max-width: 65ch; margin: 0 auto; padding: 2rem 0; }
+.computing-container { max-width: 65ch; margin: 0 auto; padding-top: 2rem; }
 
 .hero {
   position: relative;

@@ -1,5 +1,6 @@
 import Hero from './components/Hero'
 import ScrollingStrip from './components/ScrollingStrip'
+import CellularAutomaton from './components/CellularAutomaton'
 
 export default function App() {
   return (
@@ -72,9 +73,10 @@ export default function App() {
 
       <p>One practical instantiation of this worldview is a conversational shell over personal servers—persistent, schedulable, permissioned work you can describe, run, and iterate on a computer that personalizes to you over time. That’s the spirit in which we’re building Zo. While I think this essay stands even if we weren’t building Zo, if any of this resonates, please check it out and say hi.</p>
 
-      <div className="footnote" id="footnote-1">
+      <div className="footnote" id="footnote-1" style={{ marginBottom: '4rem' }}>
         <p>[1] Another huge chunk of our brain is dedicated to visual processing and for a similar reason is why the GUI was such a significant development in the history of computing.</p>
       </div>
+      <CellularAutomaton rule={30} max_rows={16} />
     </div>
   )
 }
