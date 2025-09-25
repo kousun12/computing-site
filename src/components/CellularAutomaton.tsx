@@ -32,7 +32,7 @@ function computeNextRow(previousRow: number[], rule: number): number[] {
 }
 
 export default function CellularAutomaton({ rule, max_rows }: CellularAutomatonProps) {
-  const [rows, setRows] = useState<number[][]>([])
+  const [rows, setRows] = useState<number[][]>(() => [createRandomRow(NUM_COLS)])
   const [dimensions, setDimensions] = useState<{
     cellSize: number
     width: number
@@ -46,19 +46,18 @@ export default function CellularAutomaton({ rule, max_rows }: CellularAutomatonP
     return Math.max(0, Math.min(255, r))
   }, [rule])
 
-  // Measure once on mount to derive static size
+  // Measure on mount and update on window resize without resetting rows
   useEffect(() => {
-    const measuredWidth = window.innerWidth
-    const cellSize = measuredWidth / NUM_COLS
-    const height = cellSize * max_rows
-    setDimensions({ cellSize, width: measuredWidth, height })
+    const computeDimensions = () => {
+      const measuredWidth = window.innerWidth
+      const cellSize = measuredWidth / NUM_COLS
+      const height = cellSize * max_rows
+      setDimensions({ cellSize, width: measuredWidth, height })
+    }
+    computeDimensions()
+    window.addEventListener('resize', computeDimensions)
+    return () => window.removeEventListener('resize', computeDimensions)
   }, [max_rows])
-
-  // Initialize first random row once we know dimensions
-  useEffect(() => {
-    if (!dimensions) return
-    setRows([createRandomRow(NUM_COLS)])
-  }, [dimensions])
 
   // Evolve every second
   useEffect(() => {
