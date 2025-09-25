@@ -68,6 +68,7 @@ export default function App() {
       <h2>Coda</h2>
 
       <p>All of this leaves us with a few threads that seem like they are converging in the current moment. LLMs come with a ton of implications for the evolution of computing, which makes building software particularly exciting right now. What’s happening broadly is that we are starting to build a conversational shell over classical computing. While graphical interfaces gave us a means to control software machines, language interfaces promise a means to create them on the fly. It’s an aspirational project not only because it directly empowers more people with analytical capability, but indirectly it admits a larger part of our society into a systems thinking framework through practice. The world is becoming incomprehensibly complex and I think, if as Papert imagined, we can all develop systems sensibilities as a byproduct of regular constructive feedback loops, social life stands to improve meaningfully via more objective and comprehensive understandings, which is the foundation for a robust sense of compassion.</p>
+      <p className="byline">Rob Cheung — Sept. 2025</p>
 
       <hr />
 
@@ -81,6 +82,7 @@ export default function App() {
           </li>
         </ol>
       </section>
+
       <CellularAutomaton rule={30} max_rows={16} />
     </div>
   )

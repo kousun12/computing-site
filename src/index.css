@@ -47,6 +47,29 @@ a:hover { border-bottom: 1px solid #8b4513; }
   z-index: 1; max-width: 95vw; font-size: 2.5rem;
 }
 
+.byline {
+  margin: 0 0 1.5rem 0;
+  color: #555;
+  font-style: italic;
+}
+
+.byline-hero {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 2;
+  color: #2c2c2c;
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+.byline-bottom {
+  text-align: center;
+  color: #666;
+  font-style: normal;
+  margin: 0 0 1rem 0;
+}
+
 h2 { font-size: 2rem; margin-top: 3rem; margin-bottom: 1rem; color: #1a1a1a; }
 p { margin-bottom: 1.5rem; font-size: 1.1rem; }
 blockquote { border-left: 4px solid #8b4513; padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: #666; }
