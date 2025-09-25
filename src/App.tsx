@@ -35,7 +35,7 @@ export default function App() {
 
       <h2>The conversational shell</h2>
 
-      <p><strong>A significant portion of the brain is dedicated to language, and this simple fact is the core reason why LLMs are so compelling</strong><sup className="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup>. Until now, natural language had no place in formal computing outside of constrained programming language grammars or rudimentary semantic inference. But natural language computing has always been the goal: every sci-fi depiction of computers more or less predicts a future where we just talk to the computers, they do some powerful computer stuff, and then they talk back.</p>
+      <p>A significant portion of the brain is dedicated to language, and this simple fact is the core reason why LLMs are so compelling<sup className="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup>. Until now, natural language had no place in formal computing outside of constrained programming language grammars or rudimentary semantic inference. But natural language computing has always been the goal: every sci-fi depiction of computers more or less predicts a future where we just talk to the computers, they do some powerful computer stuff, and then they talk back.</p>
 
       <p>ChatGPT demonstrated that we can conversationally retrieve knowledge embedded in LLMs. While useful, what’s more exciting to me is that there is a clear line of sight to having <strong>a conversational shell over symbolic computation</strong>. This is the pattern that truly realizes LeWitt’s original equation between an idea and the machine that creates what the idea encompasses.</p>
 
