@@ -84,6 +84,20 @@ blockquote { border-left: 4px solid #8b4513; padding-left: 1rem; margin: 1.5rem 
   border-radius: 8px;
 }
 
+.prose-figure {
+  margin: 1rem auto;
+  max-width: 65ch;
+}
+.prose-figure .prose-image {
+  margin: 0 auto .25rem;
+}
+.prose-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
 /* Full-bleed strip images */
 .strip-image { 
   width: 100vw; 

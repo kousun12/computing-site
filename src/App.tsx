@@ -49,6 +49,11 @@ export default function App() {
 
       <p>One major downstream consequence of this paradigm shift is pedagogical. Seymour Papert’s <strong>constructionism</strong> argued that people learn systems by <strong>building</strong> artifacts they can debug. His “microworlds” (Logo, turtle geometry) offered tight feedback so learners could align intention and mechanism. As participation in specification widens, <strong>systems thinking</strong> will become more ubiquitous because more people will become system creators, rather than mere consumers of finished apps.</p>
 
+      <figure className="prose-figure">
+        <img className="prose-image" src="/res/lewitt-open-incomplete.png" alt="Sol LeWitt – Open Incomplete" />
+        <figcaption className="prose-caption">Incomplete Open Cubes — Sol LeWitt 1974</figcaption>
+      </figure>
+
       <h2>A new kind of program</h2>
 
       <blockquote>
@@ -73,7 +78,7 @@ export default function App() {
 
       <hr />
 
-      <p>At the <a href="https://zo.computer">Zo Computer Company</a>, we’re building a conversational shell over personal servers—a persistent cloud workspace where you can describe, run, and iterate on a new kind of squishy program. If any of this essay resonates with you check it out and say hi.</p>
+      <p>At the <a href="https://zo.computer">Zo Computer Company</a>, we’re in the early stages of building a conversational shell over personal servers—a persistent cloud workspace where you can describe, run, and iterate on a new kind of squishy program. If any of this essay resonates with you check it out and say hi.</p>
 
       <section className="footnotes" id="footnotes" style={{ marginBottom: '4rem' }}>
         <ol>
