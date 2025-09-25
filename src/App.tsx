@@ -49,11 +49,12 @@ export default function App() {
 
       <p>One major downstream consequence of this paradigm shift is pedagogical. Seymour Papert’s <strong>constructionism</strong> argued that people learn systems by <strong>building</strong> artifacts they can debug. His “microworlds” (Logo, turtle geometry) offered tight feedback so learners could align intention and mechanism. As participation in specification widens, <strong>systems thinking</strong> will become more ubiquitous because more people will become system creators, rather than mere consumers of finished apps.</p>
 
-      <blockquote>
-        To summarize the essentials: a pattern language is a set of abstract instructions, called “patterns,” which address recurring problems and tell people what they need to do in order to resolve those problems, along with a set of sequences—the order in which to consider the patterns.
-      </blockquote>
-
       <h2>A new kind of program</h2>
+
+      <blockquote>
+        To summarize the essentials: a pattern language is a set of abstract instructions, called “patterns,” which address recurring problems and tell people what they need to do in order to resolve those problems, along with a set of sequences—the order in which to consider the patterns.<br />
+        — Christopher Alexander
+      </blockquote>
 
       <p>What does this world with dramatically more computer users vs app consumers look like? Most significantly, I think the shape of programs changes. Specifications become first‑class. There will be no such thing as a syntax error and typos will generally not be catastrophic. The distinction between code and prose will exist on a gradient. It will still be good practice for non trivial systems to formalize goals, constraints, interfaces, invariants, examples, and tests but the strictness of those will likewise exist on a gradient.</p>
 
