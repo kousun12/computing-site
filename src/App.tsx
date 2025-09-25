@@ -35,7 +35,7 @@ export default function App() {
 
       <h2>The conversational shell</h2>
 
-      <p><strong>A significant portion of the brain is dedicated to language, and this simple fact is the core reason why LLMs are so compelling</strong> <sup><a href="#footnote-1">[1]</a></sup>. Until now, natural language had no place in formal computing outside of constrained programming language grammars or rudimentary semantic inference. But natural language computing has always been the goal: every sci-fi depiction of computers more or less predicts a future where we just talk to the computers, they do some powerful computer stuff, and then they talk back.</p>
+      <p><strong>A significant portion of the brain is dedicated to language, and this simple fact is the core reason why LLMs are so compelling</strong><sup className="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup>. Until now, natural language had no place in formal computing outside of constrained programming language grammars or rudimentary semantic inference. But natural language computing has always been the goal: every sci-fi depiction of computers more or less predicts a future where we just talk to the computers, they do some powerful computer stuff, and then they talk back.</p>
 
       <p>ChatGPT demonstrated that we can conversationally retrieve knowledge embedded in LLMs. While useful, what’s more exciting to me is that there is a clear line of sight to having <strong>a conversational shell over symbolic computation</strong>. This is the pattern that truly realizes LeWitt’s original equation between an idea and the machine that creates what the idea encompasses.</p>
 
@@ -71,11 +71,16 @@ export default function App() {
 
       <hr />
 
-      <p>One practical instantiation of this worldview is a conversational shell over personal servers—persistent, schedulable, permissioned work you can describe, run, and iterate on a computer that personalizes to you over time. That’s the spirit in which we’re building Zo. While I think this essay stands even if we weren’t building Zo, if any of this resonates, please check it out and say hi.</p>
+      <p>At the <a href="https://zo.computer">Zo Computer Company</a>, we’re building a conversational shell over personal servers—a persistent cloud workspace where you can describe, run, and iterate on a new kind of squishy program. If any of this essay resonates with you check it out and say hi.</p>
 
-      <div className="footnote" id="footnote-1" style={{ marginBottom: '4rem' }}>
-        <p>[1] Another huge chunk of our brain is dedicated to visual processing and for a similar reason is why the GUI was such a significant development in the history of computing.</p>
-      </div>
+      <section className="footnotes" id="footnotes" style={{ marginBottom: '4rem' }}>
+        <ol>
+          <li id="fn1">
+            Another huge chunk of our brain is dedicated to visual processing and for a similar reason is why the GUI was such a significant development in the history of computing.
+            <a href="#fnref1" className="footnote-backref" aria-label="Back to reference">↩</a>
+          </li>
+        </ol>
+      </section>
       <CellularAutomaton rule={30} max_rows={16} />
     </div>
   )

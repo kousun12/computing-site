@@ -129,4 +129,30 @@ blockquote { border-left: 4px solid #8b4513; padding-left: 1rem; margin: 1.5rem 
 /* Footnote */
 .footnote { font-size: .9rem; color: #888; margin-top: 2rem; border-top: 1px solid #ddd; padding-top: 1rem; }
 
+/* Footnotes system */
+.footnote-ref {
+  font-size: 0.8em;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+.footnotes {
+  font-size: .9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.footnotes ol {
+  padding-left: 1.2rem;
+}
+.footnotes li {
+  margin-bottom: .5rem;
+}
+.footnotes .footnote-backref {
+  text-decoration: none;
+  margin-left: .5rem;
+  font-size: .9em;
+}
+
 
