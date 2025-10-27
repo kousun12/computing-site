@@ -15,9 +15,7 @@ a:hover { border-bottom: 1px solid #8b4513; }
 .hero {
   position: relative;
   width: 100vw;
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: 0;
+  margin-left: calc(-50vw + 50%);
   margin-bottom: 2rem;
   height: 400px;
   overflow: hidden;
@@ -42,9 +40,9 @@ a:hover { border-bottom: 1px solid #8b4513; }
 
 .hero h1 {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  margin: 0; color: black; text-align: center; white-space: nowrap;
+  margin: 0; color: black; text-align: center; white-space: normal;
   text-shadow: 0 0 6px rgba(255,255,255,.9), 0 0 16px rgba(255,255,255,.8);
-  z-index: 1; max-width: 95vw; font-size: 2.5rem;
+  z-index: 1; max-width: calc(100vw - 2rem); font-size: clamp(1.75rem, 8vw, 2.5rem); padding: 0 1rem;
 }
 
 .byline {
@@ -193,3 +191,9 @@ blockquote { border-left: 4px solid #8b4513; padding-left: 1rem; margin: 1.5rem 
 }
 
 
+@media (max-width: 768px) {
+  .computing-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
